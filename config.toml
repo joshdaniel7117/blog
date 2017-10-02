@@ -1,6 +1,6 @@
 baseurl = "https://joshdsblog.netlify.com/"
 languageCode = "en-us"
-title = "John Doe's blog"
+title = "Josh Daniel's Blog"
 # Define how many pages appear per site
 paginate = 10
 # Enable comments powered by Disqus by entering your disqus shortname
@@ -13,9 +13,9 @@ theme = "hugo-minimalist-theme"
 # with the hugo server command
 
 [params]
-    site_author = "John Doe"
-    site_description = "The awesome blog of John Doe."
-    location = "Earth"
+    site_author = "Josh Daniel"
+    site_description = "Data Science Blog."
+    location = "Mercyhurst University"
     # Link custom assets relative to /static
     avatar = "img/profile-image.png"
     header_background = "img/desk.jpg"
@@ -31,11 +31,10 @@ theme = "hugo-minimalist-theme"
     # Add your social network accounts to the profile section on the left
     # by entering your username. The links to your account will be
     # create automatically.
-    twitter   = "spf13"
     facebook  = ""
     linkedin  = ""
     behance   = ""
     dribbble  = ""
     instagram = ""
-    github    = "digitalcraftsman"
+    github    = "joshdaniel7117"
     gplus     = ""
