@@ -7,8 +7,7 @@ categories: []
 tags: []
 ---
 
-
-```r
+```{r message=FALSE, warning=FALSE}
 library(Lahman)
 library(sqldf)
 library(ggplot2)
@@ -18,8 +17,7 @@ library(ggplot2)
 
 A scatterplot is two sets of data  intertwined into a visual representation. This scatterplot charts career homeruns againist career strikeouts, only from players who had more than 400 career homeruns.
 
-
-```r
+```{r}
 query<-"select playerID,sum(HR) AS CareerHR,sum(SO) AS CareerSO 
 from Batting 
 group by playerID 
@@ -27,14 +25,11 @@ having sum(HR)>400"
 result<-sqldf(query)
 ```
 
-
-```r
+```{r}
 ggplot()+
   geom_point(data=result,aes(x=CareerSO, y=CareerHR))+
   ggtitle("Strikouts and Homeruns")+
   xlab("Career Homeruns")+
   ylab("Career Strikeouts")
 ```
-
-<img src="2017-10-02-scatterplots_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
